@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap');
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --dark-blue: hsl(229, 23%, 23%);
+    --gray-blue: hsl(227, 10%, 46%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Kumbh Sans', Arial, Helvetica, sans-serif;
+}
+
+.main {
+    background-color: var(--dark-cyan);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.bg-pattern-card {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.container {
+    width: 350px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 1;
+}
+
+.image-victor {
+    border-radius: 50%;
+    border: 4px solid white;
+    position: relative;
+    top: -60px;
+    left: 35%;
+}
+
+.credential {
+    display: flex;
+    flex-direction: row;
+    margin-top: -60px;
+    justify-content: center;
+}
+
+.credential h3 {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: var(--dark-blue);
+}
+
+.credential p {
+    margin-top: 2px;
+    font-size: 1rem;
+    color: var(--gray-blue);
+}
+
+.city {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: var(--gray-blue);
+    padding-bottom: 25px;
+    border-bottom: 2px solid lightgray;
+}
+
+.stats, .stats-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.stats {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
+.stats-name {
+    font-size: 0.6rem;
+    margin-bottom: 20px;
+    margin-top: 6px;
+    color: var(--gray-blue);
+}
+
+.likes {
+    margin-right: 13px;
+}
+
+.eighty-k {
+    padding-left: 5px;
+}
+
+.top {
+    position: relative;
+    left: 150px;
+    top: -400px;
+    transform: rotate(90deg);
+}
+
+.bottom {
+    position: relative;
+    right: 150px;
+    bottom: -450px;
+    transform: rotate(-5deg);
+}
